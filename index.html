@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+            .topright {
+                float: right;
+                padding: 5px;
+            }
+            .center {
+                margin: auto;
+                text-align: center;
+                width: 40%;
+                padding: 50px;
+            }
+            .googlebtton {
+                background-color: #4285F4;
+                color: white;
+                border-radius: 4px;
+                font-size: 18px;
+            }
+            input[type=text] {
+                width: 60%;
+                border-radius: 10px;
+                height: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="topright">
+                <a href="/imagesearch">Google Image Search</a>
+                <a href="/advancedsearch">Google Advanced Search</a>
+            </div>
+        </nav>
+        <div class="center">
+            <form action="https://www.google.com/search">
+                <input type="text" name="q">
+                <input type="submit" value="Google Search" class="googlebtton">
+                <input type="submit" value="I’m feeling lucky" class="googlebtton" name="btnI">
+            </form>
+        </div>
+    </body>
+</html>
